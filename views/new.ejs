@@ -1,0 +1,34 @@
+<%-include("partial/top.ejs") %>
+
+<div class="ui main text container segment">
+    <div class="ui sizer vertical segment">
+        <div class="ui huge header">Fearful Adventure</div>
+        
+        <form class="ui form" action="/blog" method="POST">
+            <div class="field">
+                <label>Tittle</label>
+                 <input type="text" name="blog[tittle]" placeholder="tittle...">
+            </div>
+            
+             <div class="field">
+                <label>Imagee</label>
+                   <input type="text" name="blog[image]" placeholder="image...">
+            </div>
+             <div class="field">
+                <label>Blog Content</label>
+                <textarea name="blog[body]" placeholder="Blog content goes here..."></textarea>
+                 
+            </div>
+             
+           
+          
+            
+            <input class="ui inverted big blue button" type="submit">
+        </form>
+    </div>
+       
+    </div>
+
+
+
+<%-include("partial/bottom.ejs") %>
